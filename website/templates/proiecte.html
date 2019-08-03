@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/projectsStyle.css' %}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lines of Code | Portfolio</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+			 <div class="menu">
+					<ul>
+						<li><a href="{% url 'home' %}">Details</a></li>
+						<li class="active"><a href="{% url 'portfolio' %}">Portfolio</a></li>
+						<li><a href="{% url 'services' %}">Services</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+					<div class="logo">
+						<a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="portofoliu">
+      <br></br><br></br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="project1">
+							<p class="text-center">Title - Project 1</p>
+							<div class="description">I created this project in order to earn experience in development of a web application. This website presents my acquiered skills and also my portfolio.</div>
+              <img src="{% static 'images\portofoliu1.jpg' %}" class="img-responsive">
+							<button class="button">Access the website</button>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project2">
+							<p class="text-center">Title - Project 2</p>
+							<!--<div class="description">I created this project in order to earn experience in development of a web application. This website presents my acquiered skills and also my portfolio.</div>
+              <img src="{% static 'images\portofoliu2.jpg' %}">
+							<button class="button">Access the website</button>-->
+							<div class="soon">Coming soon</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="project3">
+							<p class="text-center">Title - Project 3</p>
+							<!--<div class="description">I created this project in order to earn experience in development of a web application. This website presents my acquiered skills and also my portfolio.</div>
+              <img src="{% static 'images\portofoliu2.jpg' %}">
+							<button class="button">Access the website</button>-->
+							<div class="soon">Coming soon</div>
+            </div>
+          </div>
+      </div>
+    </div>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'javascript\animation.js' %}"></script>
+	</body>
+</html>

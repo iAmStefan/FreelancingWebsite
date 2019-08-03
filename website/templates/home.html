@@ -1,0 +1,106 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/homeStyle.css' %}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lines of Code | Details</title>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row">
+       <div class="menu">
+          <ul>
+            <li class="active"><a href="{% url 'home' %}">Details</a></li>
+            <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+          <div class="logo">
+            <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="detalii">
+      <br></br><br></br>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="objectives">
+
+              <div class="title1">The way the websites will be</div>
+              <div class="responsiveness">The website will be available on any device screen in order to follow yor website's activity.</div>
+              <div class="design">Website's design is simple, flat, modern and easy to understand for everyone.</div>
+              <div class="support">If you have any problem, you can contact me by sending an e-mail.</div>
+              <div class="seo">The website is SEO optimized  and it can be more easily found on google searches.</div>
+
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <div class="skills">
+
+              <div class="title2">My skills</div>
+              <div class="html">
+                <div class="skillName">Html5</div>
+                <div class="percentage">80%</div>
+                <div class="outerSkill">
+                  <div class="innerSkill">
+                  </div>
+                </div>
+              </div>
+              <div class="css">
+                <div class="skillName">Css3</div>
+                <div class="percentage">65%</div>
+                <div class="outerSkill">
+                  <div class="innerSkill">
+                  </div>
+                </div>
+              </div>
+              <div class="javascript">
+                <div class="skillName">JavaScript</div>
+                <div class="percentage">30%</div>
+                <div class="outerSkill">
+                  <div class="innerSkill">
+                  </div>
+                </div>
+              </div>
+              <div class="csharp">
+                <div class="skillName">C#</div>
+                <div class="percentage">70%</div>
+                <div class="outerSkill">
+                  <div class="innerSkill">
+                  </div>
+                </div>
+              </div>
+              <div class="php">
+                <div class="skillName">Django</div>
+                <div class="percentage">20%</div>
+                <div class="outerSkill">
+                  <div class="innerSkill">
+                  </div>
+                </div>
+              </div>
+              <div class="jquery">
+                <div class="skillName">JQuery</div>
+                <div class="percentage">30%</div>
+                <div class="outerSkill">
+                  <div class="innerSkill">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'javascript/animation.js' %}"></script>
+  </body>
+</html>
